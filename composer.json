@@ -10,6 +10,7 @@
         }
     ],
     "require": {
-        "ezsystems/ezpublish-legacy-installer": "~2.0"
+        "ezsystems/ezpublish-legacy-installer": "~2.0",
+        "guzzlehttp/guzzle": "~4.2"
     }
 }
