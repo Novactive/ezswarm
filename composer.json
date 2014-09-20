@@ -1,0 +1,15 @@
+{
+    "name": "novactive/ezswarm",
+    "type": "ezpublish-legacy-extension",
+    "description": "Integration with Swarm server to retrieve user accounts",
+    "license": "OSL-3",
+    "authors": [
+        {
+            "name": "Novactive",
+            "email": "contact@novactive.com"
+        }
+    ],
+    "require": {
+        "ezsystems/ezpublish-legacy-installer": "~2.0"
+    }
+}
