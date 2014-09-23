@@ -94,8 +94,10 @@ class eZSwarmOperators
         $users      = array();
         foreach ( $swarmUsers as $user )
         {
-            $users[] = array( 'label' => $user->user, 'fullname' => 'test' );
-            //$users[] = $user->user;
+            // If we want to display the customer's login and fullname in the autocompletion results,
+            // use the following type of code
+            // $users[] = array( 'label' => $user->user, 'fullname' => 'test' );
+            $users[] = $user->user;
         }
 
         return json_encode( $users, JSON_HEX_APOS );

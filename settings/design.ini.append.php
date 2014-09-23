@@ -7,6 +7,8 @@ DesignExtensions[]=ezswarm
 BackendCSSFileList[]=swarm.css
 
 [JavaScriptSettings]
-BackendJavaScriptList[]=swarm.2.js
+# Use the swarm.2.js lib instead of swarm.js, if you want to display
+# the users' login and fullname in the autocompletion results
+BackendJavaScriptList[]=swarm.js
 
 */ ?>
