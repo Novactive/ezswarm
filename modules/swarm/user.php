@@ -18,7 +18,7 @@ $userId = $Params['id'];
 
 if ( !$userId )
 {
-    $returnData = array( 'notif' => 'No user login provided' );
+    $returnData = array( 'notif' => ezpI18n::tr( 'ezswarm', 'No user login provided' ) );
 }
 else
 {
@@ -30,7 +30,7 @@ else
     }
     else
     {
-        $returnData = array( 'notif' => 'No user data found for login : ' . $userId );
+        $returnData = array( 'notif' => ezpI18n::tr( 'ezswarm', 'No user data found for login : %1', null, array( $userId ) ) );
     }
 }
 
