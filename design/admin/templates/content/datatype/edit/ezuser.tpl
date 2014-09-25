@@ -62,6 +62,9 @@
 
 <div class="break"></div>
 </div>
+<div id="loading">
+    <img alt="loading" src={'/loadingAnimation.gif'|ezimage()} />
+</div>
 <script type="text/javascript">
 var openidBaseField="#{$id_base}_"
 var swarmUserDataUrl={'/swarm/user/'|ezurl()}

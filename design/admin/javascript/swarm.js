@@ -1,10 +1,23 @@
 $(document).ready(function() {
-    if ($(openidBaseField + "login").length) {
+    if ($(".swarm-msg").length) {
         $(openidBaseField + "login").autocomplete({
             source: $.parseJSON(swarmUsers),
             select: function (event, ui) {
                 event.preventDefault();
                 $(openidBaseField + "login").val(ui.item.label);
+                $.blockUI({
+                    css: {
+                        border: "none",
+                        padding: "15px",
+                        backgroundColor: "none"
+                    },
+                    message: $("#loading"),
+                    overlayCSS: {
+                        backgroundColor: "#000",
+                        opacity: 0.1,
+                        cursor: "wait"
+                    }
+                });
                 $.ajax({
                     type    : "GET",
                     url     : swarmUserDataUrl + "/" + $(openidBaseField + "login").val(),
@@ -21,6 +34,7 @@ $(document).ready(function() {
                                 $(key).val(json.account[fields[key]]);
                             }
                         }
+                        $.unblockUI();
                     }
                 });
             }
