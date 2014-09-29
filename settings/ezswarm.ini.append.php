@@ -11,7 +11,7 @@ ApiKey=
 UserAccountAttribute=user_account
 # User attributes mapping between Swarm and eZ publish content class
 UserAttributeMapping[]
-UserAttributeMapping[first_name]=first
-UserAttributeMapping[last_name]=last
+UserAttributeMapping[firstname]=first
+UserAttributeMapping[lastname]=last
 
 */ ?>
